@@ -80,11 +80,11 @@
 
     <!-------------------header------------------------->
 
-    <div class="headerBanner">
+
       <section class="heroH">
         <div class="hero__image-wrapperH"></div>
         <div class="hero__textH">
-          <h1>Qatar 2022 WorldCup Live Streaming</h1>
+          <h1>First</h1>
           <p>
             All packages include this feature - BEIN channels in multiple
             languages, live broadcast.
@@ -94,7 +94,33 @@
           </button>
         </div>
       </section>
-    </div>
+     <section class="heroH">
+        <div class="hero__image-wrapperH1"></div>
+        <div class="hero__textH">
+          <h1>Second Slider</h1>
+          <p>
+            All packages include this feature - BEIN channels in multiple
+            languages, live broadcast.
+          </p>
+          <button id="hero__img-refreshH2">
+            <a href="#pricing">Subscribe Now &mapstodown;</a>
+          </button>
+        </div>
+      </section>
+     <section class="heroH">
+        <div class="hero__image-wrapperH3"></div>
+        <div class="hero__textH">
+          <h1>Third Slider</h1>
+          <p>
+            All packages include this feature - BEIN channels in multiple
+            languages, live broadcast.
+          </p>
+          <button id="hero__img-refreshH">
+            <a href="#pricing">Subscribe Now &mapstodown;</a>
+          </button>
+        </div>
+      </section>
+   
     <!------------------End of header------------------->
     <!--------------------------------------------Services----------------------------------------->
     <div class="InfoBanner">
@@ -438,5 +464,23 @@
     <!-------------------JavaScript Animation--------------------------------->
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/header.js"></script>
+     <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("heroH");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "flex";
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+      }
+    </script>
   </body>
 </html>
