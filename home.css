@@ -862,6 +862,7 @@
 
   #hero__img-refreshP {
     font-size: 18px;
+    display:none;
   }
   .hero__image-wrapperP {
     background-position: right;
@@ -972,27 +973,32 @@
 }
 /* Div Tree End  */
 @media screen and (max-width: 568px) {
-  .heroP{
+  .heroP {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
+    height: auto;
   }
   .containerP {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem 80px;
+    grid-gap: 8rem;
     font-size: 1.2rem;
     z-index: 5;
     width: 100%;
   }
-  .hero__textP{
+  .containerP .oneM,
+  .containerP .twoM,
+  .containerP .threeM {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+
+  .hero__textP {
     width: 100%;
   }
-  .
 }
 /*Pricing Cards End*/
 /*End Of Pricing Banner*/
