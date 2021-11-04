@@ -31,7 +31,29 @@
   content: "";
 }
 
-.hero__image-wrapperH {
+.hero__image-wrapperH1 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/TV-channels-remote.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__image-wrapperH2 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/mainBack.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__image-wrapperH3 {
   display: flex;
   position: absolute;
   width: 100%;
